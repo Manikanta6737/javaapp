@@ -30,6 +30,10 @@ spec:
     command:
     - cat
     tty: true
+  - name: gcloud
+    image:
+    command:
+    - cat
 
   - name: helm
     image: us.gcr.io/sequislife-pilot/helm3
