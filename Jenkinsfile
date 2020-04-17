@@ -50,13 +50,13 @@ spec:
         }
       }
 	stage('Build and push image with Container Builder') {
-      steps {
-        container('gcloud') {
-          sh "gcloud auth list" 
-          sh "touch app.jar"
-          sh "PYTHONUNBUFFERED=1 gcloud builds submit -t ${IMAGE_TAG} ."
+      	    steps {
+        	container('gcloud') {
+          	sh "gcloud auth list" 
+          	sh "touch app.jar"
+          	sh "PYTHONUNBUFFERED=1 gcloud builds submit -t ${IMAGE_TAG} ."
   
         }
       } 
     }
-   } 
+  } 
