@@ -31,7 +31,7 @@ spec:
     - cat
     tty: true
   - name: gcloud
-    image:
+    image: us.gcr.io/sequislife-pilot/gcloud
     command:
     - cat
   - name: helm
